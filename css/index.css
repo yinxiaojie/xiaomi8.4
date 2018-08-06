@@ -6,7 +6,7 @@
 .header{
     width: 100%;
     height: 40px;
-    background: #ffffff;
+    background: #333333;
     margin: 0 auto;
 }
 .head{
@@ -142,9 +142,15 @@ li:hover{
 .search-left{
     width: 245px;
     height: 50px;
-    background: #ffb74f;
+    background: #ffffff;
     float: left;
     position: relative;
+}
+.user{
+    width: 245px;
+    height: 47px;
+    outline:none;
+    border: none;
 }
 .search-right{
     width: 50px;
@@ -199,7 +205,7 @@ li:hover{
     background: #e0e0e0;
     margin-top: 25px;
     float: right;
-    margin-right: 0;
+    margin-right: -90px;
 }
 .arrows1{
     float: left;
@@ -532,7 +538,7 @@ li:hover{
     cursor: pointer;
 }
 .tourist{
-   border-bottom: rgba(0,0,0,0.8);
+   border-bottom: rgba(0,0,0,0.2);
 }
 .brick{
     width: 234px;
@@ -549,7 +555,7 @@ li:hover{
 }
 .brick-m:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .brick-n{
@@ -574,7 +580,7 @@ li:hover{
 }
 .content-box:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .content-box-1{
@@ -589,7 +595,7 @@ li:hover{
 }
 .up:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .on-small{
@@ -605,6 +611,39 @@ li:hover{
     bottom: 0;
     cursor: pointer;
 }
+.on-small-word{
+    width: 180px;
+    height: 36px;
+    margin-left: 29px;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    /*line-height: 20px;*/
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.on-small-comment{
+    width: 125px;
+    height: 30px;
+    font-size: 12px;
+    color: #ffc299;
+    margin-top: 8px;
+    margin-left: 29px;
+}
+.on-small-from{
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+    color:#ffc299;
+    margin-left: 29px;
+}
+.small-from{
+    margin-top: 8px;
+}
 .content-boxtop{
     margin-top: 14px;
 }
@@ -613,6 +652,9 @@ li:hover{
     height: 170px;
     background: #b0a395;
     /*margin-top: 20px;*/
+}
+.exposure-t{
+    margin-top: 18px;
 }
 .on{
     width: 64px;
@@ -713,7 +755,7 @@ li:hover{
 }
 .phone:hover{
     transform: translateY(-10px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .mobile{
@@ -777,7 +819,7 @@ li:hover{
 }
 .voerall:hover{
     transform: translateY(-10px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .too{
@@ -874,7 +916,7 @@ li:hover{
 }
 .model:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .model-five{
@@ -939,7 +981,7 @@ li:hover{
 }
 .show-first:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .show-second{
@@ -951,20 +993,27 @@ li:hover{
     background: white;
 }
 .produce{
-    width: 276px;
+    width: 240px;
     height: 72px;
     background: white;
-    text-align: center;
-    font-size: 15px;
-    padding: 5px;
+    /*text-align: center;*/
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    line-height:24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 30px;
 }
 .observer{
-    width: 296px;
+    width: 200px;
     height: 30px;
     background: white;
     color: #c1b0b7;
     font-size: 12px;
     text-align: center;
+    margin-top: 15px;
 }
 .space{
     width: 296px;
@@ -991,10 +1040,10 @@ li:hover{
     font-size: 12px;
     display: block;
     float: right;
-    margin-right: 150px;
+    margin-right: 140px;
 }
 .space-price-n{
-    margin-right: 120px;
+    margin-right: 130px;
 }
 /*热评产品结束*/
 /*内容开始*/
@@ -1020,7 +1069,7 @@ li:hover{
 }
 .game:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .game-four{
@@ -1100,6 +1149,9 @@ li:hover{
     margin-left: 50px;
     margin-top: 20px;
 }
+.round-one-n{
+    margin-left: 70px;
+}
 .round-one-a{
     border: none;
 }
@@ -1130,7 +1182,7 @@ li:hover{
 }
 .movie:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 .movie-f{
