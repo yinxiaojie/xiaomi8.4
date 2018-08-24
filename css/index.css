@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 /*头部开始*/
 .header{
@@ -18,14 +19,14 @@
 .head-left{
     width: 509px;
     height: 40px;
-    background: #333333;
+    /*background: #333333;*/
     float: left;
     margin-left: 16px;
 }
 .head-right{
     width: 290px;
     height: 40px;
-    background:  #333333;
+    /*background:  #333333;*/
     float: right;
     margin-right: 32px;
 }
@@ -50,16 +51,22 @@ a{
 .sort_right1{
     width: 170px;
     height: 40px;
-    background:  #333333;
+    /*background:  #333333;*/
 }
 .sort_right{
-    font-size: 10px;
-    margin-right:3px ;
+    font-size:10px;
+    /*margin-right:3px;*/
     margin-left: 10px;
     border-right: 2px solid #605751;
     line-height: 40px;
     color: #a4b094;
     padding-right: 5px;
+}
+.last{
+    border-right: none;
+}
+.last1{
+    margin-left: 5px;
 }
 .list:hover{
     color: white;
@@ -67,10 +74,11 @@ a{
 .sort_right2{
     width: 120px;
     height: 40px;
-    background: #424242;
+    /*background: #424242;*/
     float: right;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-top: -40px;
+    position: relative;
 }
 .sort_right2:hover .icon-gouwuche{
     color: #ff6700;
@@ -87,7 +95,7 @@ a{
     font-size: 15px;
     color: #b0b0ac;
     line-height: 40px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .shop{
     font-size: 12px;
@@ -96,12 +104,27 @@ a{
     color:#b0b0ac;
     margin-right: 20px;
 }
+.shopBox{
+    width:316px;
+    height: 0;
+    background:#fff;
+    position: absolute;
+    top:40px;
+    right: 0;
+    z-index: 20;
+    font-size: 11px;
+    text-align: center;
+    line-height: 98px;
+    /*display: none;*/
+    overflow: hidden;
+    transition: all .5s;
+}
 /*头部结束*/
 /*导航开始*/
 .nav_box{
     width: 1226px;
     height: 100px;
-    background: #ffffff;
+    /*background: #ffffff;*/
     margin-left: 33px;
     margin: 0 auto;
 }
@@ -134,7 +157,7 @@ li:hover{
 .search{
     width: 296px;
     height: 50px;
-    background: #83c44e ;
+    /*background: #83c44e ;*/
     float: right;
     margin-top: 25px;
     border: 1px solid #b0b0ac;
@@ -177,7 +200,6 @@ li:hover{
     text-align: center;
     margin-left: 16px;
 }
-
 /*导航结束*/
 /*闪购开始*/
 .home{
@@ -232,7 +254,7 @@ li:hover{
 .boss{
     width: 1226px;
     height: 340px;
-    background:#ffffff;
+    /*background:#ffffff;*/
 }
 .bos{
     width: 234px;
@@ -382,14 +404,9 @@ li:hover{
 .banner{
     width: 1226px;
     height: 460px;
-    background: chartreuse;
+    /*background: chartreuse;*/
     margin: 0 auto;
     position: relative;
-}
-.pic{
-    width: 1226px;
-    height: 460px;
-    background: white;
 }
 .sildes-l{
     width: 41px;
@@ -402,6 +419,7 @@ li:hover{
     margin-top: auto;
     margin-bottom: auto;
     left: 234px;
+    z-index: 50;
 }
 .sildes-l:hover{
     background: url("../img/icon-slides.png")  no-repeat 0;
@@ -418,6 +436,7 @@ li:hover{
     margin-top: auto;
     margin-bottom: auto;
     right: 0;
+    z-index: 50;
 }
 .sildes-r:hover{
     background: url("../img/icon-slides.png") no-repeat -42px;
@@ -428,6 +447,7 @@ li:hover{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 .banner img{
     width: 1226px;
@@ -440,12 +460,13 @@ li:hover{
     background: #5b5144;
     position: relative;
     padding-top: 20px;
-    list-style: none;
+    /*list-style: none;*/
+    z-index: 10;
 }
 .botton-son{
     width: 234px;
     height: 42px;
-    background:#5b5144 ;
+    background:#5b5144;
     font-size: 12px;
     display: block;
 }
@@ -469,28 +490,148 @@ li:hover{
     margin-right: 10px;
     color: #d8d7d6;
 }
+/*侧导航选项卡开始*/
+.asideBox{
+    width: 992px;
+    height: 460px;
+    background:#ff6700;
+    z-index:999;
+    position: absolute;
+    top:0;
+    left:234px;
+    display: none;
+}
+.aside{
+    width: 245px;
+    height: 460px;
+    /*background: blue;*/
+    float: left;
+    margin-right: 3px;
+}
+.aside>ul>li{
+    width: 245px;
+    height: 60px;
+    /*background: #fa9309;*/
+    margin-top: 14px;
+
+}
+.aside>ul>li>a{
+    width: 85px;
+    height: 60px;
+    display: block;
+}
+.call{
+    width: 60px;
+    height: 60px;
+    background: url("../img/m8-80.png") no-repeat center;
+    background-size: 60px 60px;
+    float: left;
+}
+.call_1{
+    background: url("../img/m8se-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_2{
+    background: url("../img/mix2s80-80white.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_3{
+    background: url("../img/max3-80-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_4{
+    background: url("../img/80808080808080.jpg") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_5{
+    background: url("../img/heisha-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_6{
+    background: url("../img/mix2-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_7{
+    background: url("../img/max2_80.jpg") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_8{
+    background: url("../img/6pro140-140.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_9{
+    background: url("../img/6AAAA.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_10{
+    background: url("../img/666666.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_11{
+    background: url("../img/note5-80-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_12{
+    background: url("../img/s2-80-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_13{
+    background: url("../img/redmi5P-80-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_14{
+    background: url("../img/80.jpg") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_15{
+    background: url("../img/compare.jpg") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_16{
+    background: url("../img/mifenka-1.jpg") no-repeat center;
+    background-size: 60px 60px;
+}
+.call_17{
+    background: url("../img/mimobile.jpg") no-repeat center;
+    background-size: 60px 60px;
+}
+.door{
+    background: url("../img/weixiu80-80.png") no-repeat center;
+    background-size: 60px 60px;
+}
+.callname{
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+    line-height: 60px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    color: #333;
+}
+/*侧导航选项卡结束*/
 .circle{
     width: 90px;
     height: 10px;
-    background: #d8eaf4;
     /*右浮动*/
     float: right;
     position: relative;
     right: 35px;
     bottom: 25px;
+    z-index:100;
 }
-.circle1{
+.circle>li{
     width: 6px;
     height: 6px;
     background: #b0a395;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 8px;
     /*左浮动*/
     float: left;
     list-style: none;
     border: 2px solid #867664;
 }
-.circle1:hover{
+.circle>li:hover{
     background: #ebdbca;
 }
 .circle1-1{
@@ -500,7 +641,7 @@ li:hover{
 .house{
     width: 1226px;
     height: 673px;
-    background:purple;
+    /*background:purple;*/
     margin-left: 33px;
     margin: 0 auto;
 }
@@ -523,22 +664,31 @@ li:hover{
     /*右浮动*/
     float: right;
     margin-top: 20px;
+    position: relative;
 }
+/*家电选项卡开始*/
+.jiadianBox{
+    width: 992px;
+    height: 614px;
+    background: #ff6700;
+    position: absolute;
+    top: 39px;
+    right: 0;
+}
+
+/*家电选项卡结束*/
 .tuor{
     font-size: 12px;
     /*左浮动*/
     float: left;
     margin-right: 30px;
-    border-bottom: 2px solid #ff6700;
     padding-bottom: 5px;
     list-style: none;
 }
 .tuor:hover{
     color:#ff6700;
     cursor: pointer;
-}
-.tourist{
-   border-bottom: rgba(0,0,0,0.2);
+    border-bottom: 2px solid #ff6700;
 }
 .brick{
     width: 234px;
@@ -555,7 +705,7 @@ li:hover{
 }
 .brick-m:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .brick-n{
@@ -572,30 +722,29 @@ li:hover{
     width: 234px;
     height: 301px;
     background: #ffffff;
-    margin-left: 14px;
+    margin-left: 13px;
     float: left;
     position: relative;
     overflow: hidden;
-    transition: all 2s;
+    transition: all 1s;
 }
 .content-box:hover{
-    transform: translateY(-5px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
-    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
 }
 .content-box-1{
     width: 234px;
     height: 301px;
     background: #f5f5f5;
     margin-left: 14px;
-    float: left;
+    float:left;
     position: relative;
     overflow: hidden;
     transition: all 2s;
 }
 .up:hover{
-    transform: translateY(-5px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .on-small{
@@ -651,10 +800,10 @@ li:hover{
     width: 234px;
     height: 170px;
     background: #b0a395;
-    /*margin-top: 20px;*/
+    margin-top: 20px;
 }
-.exposure-t{
-    margin-top: 18px;
+.exposure_n{
+    margin-top: 35px;
 }
 .on{
     width: 64px;
@@ -736,9 +885,9 @@ li:hover{
 /*家电结束*/
 /*手机开始*/
 .type{
-    width: 1226px;
+    width:100%;
     height: 670px;
-    background: #ffffff;
+    background: #f5f5f5;
     overflow: hidden;
 }
 .type-top{
@@ -755,7 +904,7 @@ li:hover{
 }
 .phone:hover{
     transform: translateY(-10px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .mobile{
@@ -815,11 +964,11 @@ li:hover{
     background:#ffffff;
     float: left;
     margin-left: 14px;
-    transition: all 2s;
+    transition: all 1s;
 }
 .voerall:hover{
     transform: translateY(-10px);
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 8px 8px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .too{
@@ -886,20 +1035,23 @@ li:hover{
 /*手机结束*/
 /*为你推荐开始*/
 .presenter{
-     width: 1226px;
+     width:100%;
      height: 360px;
-     background: #83c44e;
+     background: #f5f5f5;
 }
 .recommend{
     width: 100%;
     height: 60px;
-    background: #ffffff;
+    background: #f5f5f5;
 }
 .recommend h2{
     font-size: 20px;
     float: left;
     font-weight: normal;
     line-height: 60px;
+}
+.arrows_n{
+    margin-right: 0;
 }
 .product{
     width: 100%;
@@ -916,7 +1068,7 @@ li:hover{
 }
 .model:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .model-five{
@@ -959,12 +1111,12 @@ li:hover{
 .hot{
     width: 1226px;
     height: 474px;
-    background: #83c44e;
+    /*background: #83c44e;*/
 }
 .hot-top{
     width: 1226px;
     height: 59px;
-    background: #ff7e4f;
+    /*background: #ff7e4f;*/
 }
 .show{
     width: 1226px;
@@ -981,7 +1133,7 @@ li:hover{
 }
 .show-first:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .show-second{
@@ -1050,7 +1202,7 @@ li:hover{
 .start{
     width: 1226px;
     height: 479px;
-    background: #42428a;
+    /*background: #42428a;*/
     margin-top: 5px;
 }
 .amuse{
@@ -1069,7 +1221,7 @@ li:hover{
 }
 .game:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .game-four{
@@ -1158,13 +1310,10 @@ li:hover{
 /*内容结束*/
 /*视频开始*/
 .video{
-    width: 1226px;
+    width: 100%;
     height: 345px;
     background: #f5f5f5;
     margin-top: 5px;
-}
-.tipe-c{
-    background: white;
 }
 .movies{
     width: 100%;
@@ -1182,7 +1331,7 @@ li:hover{
 }
 .movie:hover{
     transform: translateY(-5px);
-    box-shadow: 5px 5px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .movie-f{
@@ -1228,14 +1377,6 @@ li:hover{
 .movie:hover .bottoa{
     background:#ff6700 ;
 }
-/*.bottoa-a{*/
-    /*background: #050507;*/
-/*}*/
-/*.bottoa-b{*/
-    /*background: #5d5d5d;*/
-/*}*/
-/*.bottoa-c{*/
-    /*background: #3b443f;*/
 /*视频结束*/
 /*通道开始*/
 .family{
@@ -1253,7 +1394,7 @@ li:hover{
 .family-two{
     width: 316px;
     height: 170px;
-    background: #ef3a3b;
+    /*background: #ef3a3b;*/
     float: left;
     margin-left: 14px;
 }
@@ -1288,7 +1429,7 @@ li:hover{
     font-size: 20px;
     color: #cdcac8;
     margin-left: 32px;
-    line-height: 85px;
+    line-height: 70px;
 }
 .select{
     font-size: 12px;
@@ -1308,7 +1449,7 @@ li:hover{
     font-size: 20px;
     color: #cdcac8;
     margin-left: 25px;
-    line-height: 85px;
+    line-height: 70px;
 }
 .tuangou{
     font-size: 12px;
@@ -1326,7 +1467,7 @@ li:hover{
     font-size: 20px;
     color:#cdcac8;
     margin-left: 26px;
-    line-height: 85px;
+    line-height: 70px;
 }
 .passage{
     font-size: 12px;
@@ -1344,7 +1485,7 @@ li:hover{
     font-size: 15px;
     color:#cdcac8;
     margin-left: 31px;
-    line-height: 85px;
+    line-height: 70px;
 }
 .limit{
     font-size: 12px;
@@ -1362,7 +1503,7 @@ li:hover{
     font-size: 20px;
     color:#cdcac8;
     margin-left: 24px;
-    line-height: 85px;
+    line-height: 70px;
 }
 .old{
     font-size: 12px;
@@ -1380,7 +1521,7 @@ li:hover{
     font-size: 20px;
     color:#cdcac8;
     margin-left: 24px;
-    line-height: 85px;
+    line-height: 70px;
 }
 .charge{
     font-size: 12px;
@@ -1399,7 +1540,7 @@ li:hover{
 .down {
     width: 1226px;
     height: 254px;
-    background: #ef3a3b;
+    /*background: #ef3a3b;*/
     margin-top: 5px;
 }
 .down-top{
@@ -1767,7 +1908,7 @@ li:hover{
 .site-info{
     width: 1226px;
     height: 153px;
-    background: #ff6700;
+    /*background: #ff6700;*/
 }
 .container{
     width: 1226px;
@@ -1789,8 +1930,8 @@ li:hover{
 }
 .sites{
     width: 765px;
-    height: 21px;
-    background: #ef3a3b;
+    height: 20px;
+    /*background: #ef3a3b;*/
 }
 .address{
     width:765px;
@@ -1798,26 +1939,28 @@ li:hover{
     background: #ffffff;
 }
 .city-shop{
-    width:55px;
-    height: 21px;
+    width:53px;
+    height: 20px;
     background: #ffffff;
     float: left;
     border-right: 1px solid #adadad;
 }
 .city{
     width: 48px;
-    height: 21px;
+    height: 20px;
     background: #ffffff;
     float: left;
     /*margin-right: px;*/
     border-right: 1px solid #adadad;
+
 }
 .nofollow-l{
-    margin-left: 3px;
+    /*margin-left: 3px;*/
 }
 .nofollow{
     color: #757575;
-    font-size: 10px;
+    font-size: 8px;
+   padding-left: 2px;
 }
 .nofollow:hover{
     color: #ff6700;
@@ -1945,4 +2088,8 @@ li:hover{
     left: 460px;
     top: 25px;
     position: absolute;
+}
+.bigbox{
+    width: 100%;
+    background:#f5f5f5;
 }
