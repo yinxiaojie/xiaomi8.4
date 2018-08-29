@@ -64,7 +64,6 @@ window.onload=function () {
     console.log(circleLi, picture, sildes1, sildes2);
     let t = setInterval(move, 1500);
     let num = 0;
-
     function move() {
         for (let i = 0; i < picture.length; i++) {
             picture[num].style.zIndex = "5";
@@ -101,6 +100,7 @@ window.onload=function () {
     }
 
     sildes2.onclick = function () {
+
         move();
     };
     sildes1.onclick = function () {
@@ -124,18 +124,18 @@ window.onload=function () {
     }
 
     //内容轮播图
-    let readBox=document.querySelector(".readBox");
+    let game=document.querySelector(".game");
     let current1=next1=0;
-    Content(readBox,current1,next1);
-    let readBox1=document.querySelector(".readBox1");
+    Content(game,current1,next1);
+    let game1=document.querySelector(".game1");
     let current2=next2=0;
-    Content(readBox1,current2,next2);
-    let readBox2=document.querySelector(".readBox2");
+    Content(game1,current2,next2);
+    let game2=document.querySelector(".game2");
     let current3=next3=0;
-    Content(readBox2,current3,next3);
-    let readBox3=document.querySelector(".readBox3");
+    Content(game2,current3,next3);
+    let game3=document.querySelector(".game3");
     let current4=next4=0;
-    Content(readBox3,current4,next4);
+    Content(game3,current4,next4);
     function Content(readBoxs,current,next){
         let read=readBoxs.querySelectorAll(".read");
         let read1=readBoxs.querySelector(".read");
@@ -156,7 +156,7 @@ window.onload=function () {
             }
             flag=false;
             move1();
-        }
+        };
         moveLeft.onclick=function(){
             if(!flag){
                 return;
@@ -166,7 +166,7 @@ window.onload=function () {
             }
             flag=false;
             move1L();
-        }
+        };
         function move1(){
             next++;
             if (next==read.length){

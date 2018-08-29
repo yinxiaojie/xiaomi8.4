@@ -1183,7 +1183,7 @@ li:hover{
 }
 .voerall:hover{
     transform: translateY(-10px);
-    box-shadow: 0 5px 8px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px 2px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 .too{
@@ -1194,7 +1194,7 @@ li:hover{
     height: 202px;
     background: #ffffff;
 }
-.onclick{
+.click{
     width: 234px;
     height: 20px;
     background: #ffffff;
@@ -1457,7 +1457,7 @@ li:hover{
     position: absolute;
     color: #ffffff;
     font-size: 14px;
-    text-align: center ;
+    text-align: center;
     line-height: 48px;
     left: 0;
     top: 0;
@@ -1492,6 +1492,7 @@ li:hover{
     text-align: center ;
     line-height: 48px;
 }
+
 .content_bottom li:hover .move_right{
     display: block;
 }
@@ -1545,15 +1546,15 @@ li:hover{
     color: #ff6700;
     text-align: center;
 }
-.ex1{
+.color1{
     color: #83c44e;
 
 }
-.ex2{
+.color2{
     color: #e53935;
 
 }
-.ex3{
+.color3{
     color: #2196f3;
 
 }
@@ -1655,10 +1656,6 @@ li:hover{
     background: #fff;
     border: 2px solid #ff6700;
 }
-
-
-
-
 
 /*内容结束*/
 /*视频开始*/
