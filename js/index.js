@@ -13,7 +13,7 @@ window.onload=function () {
     let btn = document.querySelector(".botton");
     let btnLi = btn.querySelectorAll(".botton li");
     let asideBox = document.querySelectorAll(".asideBox");
-    console.log(btnLi, btn, asideBox);
+    // console.log(btnLi, btn, asideBox);
     for (let i = 0; i < btnLi.length; i++) {
         btnLi[i].onmouseenter = function () {
             asideBox[i].style.display = "block";
@@ -43,7 +43,7 @@ window.onload=function () {
     let lists = document.querySelectorAll(".top-right li");
     let content = document.querySelectorAll(".content");
     // let contentBox=document.querySelectorAll(".content-box");
-    console.log(content);
+    // console.log(content);
     for (let i = 0; i < lists.length; i++) {
         lists[i].onmouseenter = function () {
             for (let j = 0; j < lists.length; j++) {
@@ -61,7 +61,7 @@ window.onload=function () {
     let circleLi = circle.getElementsByTagName("li");
     let sildes1 = document.getElementsByClassName("sildes-l")[0];
     let sildes2 = document.getElementsByClassName("sildes-r")[0];
-    console.log(circleLi, picture, sildes1, sildes2);
+    // console.log(circleLi, picture, sildes1, sildes2);
     let t = setInterval(move, 1500);
     let num = 0;
     function move() {
@@ -220,5 +220,83 @@ window.onload=function () {
             };
         });
     }
+
+
+
+
+    //上导航选项卡
+    let nav=document.querySelector(".nav");
+    let lis=document.querySelectorAll(".nav li");
+    let downBox=document.querySelectorAll(".down-box");
+    for(let i=0;i<lis.length;i++){
+        lis[i].onmouseenter=function () {
+            downBox[i].style.height="230px";
+        };
+        lis[i].onmouseleave=function () {
+            downBox[i].style.height="0";
+
+        }
+    }
+
+
+
+
+    //为你推荐选项卡
+    let product=document.querySelector(".product");
+    let recommend=document.querySelector(".recommend");
+    let arrow1=document.querySelector(".recommend .arrows1");
+    let arrow2=document.querySelector(".recommend .arrows2");
+    let widths=parseInt(getComputedStyle(product,null).width)/3;
+    let times=0;
+    arrow1.onclick=function () {
+        times--;
+        if(times==-1){
+            times=0;
+        }
+        product.style.transform="translateX("+(-widths*times)+"px)";
+    };
+    arrow2.onclick=function () {
+        times++;
+        if(times==3){
+            times=2;
+        }
+        product.style.transform="translateX("+(-widths*times)+"px)";
+    }
+
+    //闪购选项卡
+    let flash=document.querySelector(".flash");
+    let rice=document.querySelector(".rice");
+    let arrows1=document.querySelector(".rice .arrows1");
+    let arrows2=document.querySelector(".rice .arrows2");
+    let widths1=parseInt(getComputedStyle(flash,null).width)/2;
+    let twice=0;
+    arrows1.onclick=function () {
+        twice--;
+        console.log(twice);
+        if(twice==1){
+            twice=0;
+        }
+        flash.style.transform="translateX("+(-widths1*twice)+"px)";
+    };
+    arrows2.onclick=function () {
+        twice++;
+        if(twice==2){
+            twice=1;
+        }
+        flash.style.transform="translateX("+(-widths1*twice)+"px)";
+    }
+
+    //固定定位选项卡
+    let fixation=document.querySelector(".fixation");
+    let last=document.querySelector(".fixation .icon-shangchuan");
+    window.onscroll=function () {
+        let bh=document.body.scrollTop||document.documentElement.scrollTop;
+        console.log(bh);
+        last.onclick=function () {
+            animate(document.body,{scrollTop:0});
+            animate(document.documentElement,{scrollTop:0});
+        }
+    }
+
 
 };

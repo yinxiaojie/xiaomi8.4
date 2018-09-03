@@ -121,11 +121,15 @@ a{
 }
 /*头部结束*/
 /*导航开始*/
+nav{
+    width: 100%;
+    height: 100%;
+}
 .nav_box{
     width: 1226px;
     height: 100px;
     /*background: #ffffff;*/
-    margin-left: 33px;
+    /*margin-left: 33px;*/
     margin: 0 auto;
 }
 .logo-mi{
@@ -138,7 +142,7 @@ a{
 }
 .nav{
     width: 620px;
-    height: 100%;
+    height: 100px;
     background: #ffffff;
     float: left;
     margin-left: 180px;
@@ -151,9 +155,252 @@ a{
     color: #333333;
 }
 li:hover{
-    color: red;
+    color: #ff6700;
     cursor: pointer;
 }
+
+/*上导航选项卡开始*/
+.down-box{
+    width: 100%;
+    height:0;
+    /*background: #ff6700;*/
+    position: absolute;
+    top:140px;
+    left:0;
+    z-index: 100;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.down-box1{
+    width: 1226px;
+    height: 229px;
+    background: #fff;
+    margin: 0 auto;
+    border-top: 1px solid #e0e0e0;
+}
+.phone-box{
+    width: 203px;
+    height: 229px;
+    /*background: #f08fcc;*/
+    float: left;
+    position: relative;
+}
+.line{
+    width: 1px;
+    height: 100px;
+    background: #e0e0e0;
+    position: absolute;
+    top:40px;
+    left:203px;
+
+}
+.photo-box-top{
+    width: 64px;
+    height: 20px;
+    background: white;
+    border: 1px solid #ff6700;
+    font-size: 12px;
+    color: #ff6700;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 68px;
+}
+.photo-box-center{
+    width: 203px;
+    height: 150px;
+    background: url("../img/pc-320-220-mi8.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-up{
+    margin-top: 22px;
+}
+.photo-box-bottom{
+    width: 100%;
+    height: 31px;
+    /*background: lime;*/
+}
+.mingzi{
+    font-size: 11px;
+    color: #333;
+    text-align: center;
+}
+.jiaqian{
+    font-size: 11px;
+    color: #ff6700;
+    text-align: center;
+    margin-top: 5px;
+}
+.photo-box-center1{
+    background: url("../img/pc-320-220-mi8se.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center2{
+    background: url("../img/max3-320-220.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center3{
+    background: url("../img/mix2s320-220white.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center4{
+    background: url("../img/mix2320-220.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center5{
+    background: url("../img/32022012085.jpg") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center6{
+    background: url("../img/6pro320-220.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center7{
+    background: url("../img/666320.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center8{
+    background: url("../img/6A320.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center9{
+    background: url("../img/note5-320-220.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center10{
+    background: url("../img/s2-320-220.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-box-center11{
+    background: url("../img/5P-320-220.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.photo-up1{
+    margin-top: 1px;
+}
+.TV1{
+    background: url("../img/75.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.TV2{
+    background: url("../img/32.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.TV3{
+    background: url("../img/4a43.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.TV4{
+    background: url("../img/50.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.TV5{
+    background: url("../img/55320220.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.TV6{
+    background: url("../img/4a65555.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.miname{
+    color: #333;
+}
+.notebook{
+    background: url("../img/pingbanok.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.notebook1{
+    background: url("../img/320x220biiben.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.notebook2{
+    background: url("../img/xinbijiben.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.notebook3{
+    background: url("../img/WechatIMG603.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.notebook4{
+    background: url("../img/WechatIMG603 (1).png") no-repeat center;
+    background-size: 160px 110px;
+}
+.notebook5{
+    background: url("../img/bijiben32012.5.jpg") no-repeat center;
+    background-size: 160px 110px;
+}
+.air{
+    background: url("../img/kongtiao320-220.jpg") no-repeat center;
+    background-size: 160px 110px;
+}
+.new{
+    background: url("../img/shouhuan.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.new1{
+    background: url("../img/luyouqi.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.new2{
+    background: url("../img/xiaomixiaoaiai.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.new3{
+    background: url("../img/toiuyingyi.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.new4{
+    background: url("../img/VR.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.new5{
+    background: url("../img/shexiangji.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.lu{
+    background: url("../img/xiaomiluyouqi4.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.lu1{
+    background: url("../img/4Q.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.lu2{
+    background: url("../img/3A.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.lu3{
+    background: url("../img/3G.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.lu4{
+    background: url("../img/PRO.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.lu5{
+    background: url("../img/quanbuluyouqi.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.hardware{
+    background: url("../img/quanbuluyouqi.png") no-repeat center;
+    background-size: 160px 110px;
+}
+.hardware1{
+    background: url("../img/xiaomijingshuiqi.jpg") no-repeat center;
+    background-size: 160px 110px;
+}
+.hardware2{
+    background: url("../img/saodijiqiren320-220.jpg") no-repeat center;
+    background-size: 160px 110px;
+}
+.hardware3{
+    background: url("../img/dfb.jpg") no-repeat center;
+    background-size: 160px 110px;
+}
+.hardware4{
+    background: url("../img/air2.jpg") no-repeat center;
+    background-size: 160px 110px;
+}
+/*上导航选项卡结束*/
 .search{
     width: 296px;
     height: 50px;
@@ -204,7 +451,7 @@ li:hover{
 /*闪购开始*/
 .home{
     width: 1226px;
-    height: 441px;
+    height: 400px;
     background: #ffffff;
     margin-left: 33px;
     margin: 0 auto;
@@ -255,6 +502,19 @@ li:hover{
     height: 340px;
     /*background:#ffffff;*/
 }
+.shangou{
+    width: 978px;
+    height: 339px;
+    /*background: #ff6700;*/
+    margin-left: 248px;
+    overflow: hidden;
+}
+.flash{
+    width: 1970px;
+    height: 339px;
+    /*background: #b0b1bd;*/
+    transition: all 1s;
+}
 .bos{
     width: 234px;
     height: 339px;
@@ -263,8 +523,14 @@ li:hover{
     float: left;
     margin-right: 14px;
 }
-.bos1{
+.bos6{
+    position: absolute;
+    z-index: 10;
+}
+.bos:last-child{
     margin-right: 0;
+}
+.bos1{
     border-top: 1px solid #e53935
 }
 .bos4{
@@ -363,6 +629,10 @@ li:hover{
     margin-top: 40px;
     text-align: center;
 }
+.fan>img{
+    width: 160px;
+    height: 160px;
+}
 .name{
     width: 234px;
     height: 20px;
@@ -382,6 +652,7 @@ li:hover{
     width: 234px;
     height: 20px;
     background: #fafafa;
+    margin-top: 10px;
 }
 .price1{
     width: 49%;
@@ -941,16 +1212,6 @@ li:hover{
     transform: translateY(-10px);
     box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
 }
-/*.content-box-1{*/
-    /*width: 234px;*/
-    /*height: 301px;*/
-    /*background: #f5f5f5;*/
-    /*margin-left: 14px;*/
-    /*float:left;*/
-    /*position: relative;*/
-    /*overflow: hidden;*/
-    /*transition: all 2s;*/
-/*}*/
 .up:hover{
     transform: translateY(-10px);
     box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
@@ -1092,6 +1353,20 @@ li:hover{
     float: right;
 }
 /*家电结束*/
+/*展示开始*/
+.mibox{
+    width: 100%;
+    height: 204px;
+    overflow: hidden;
+}
+.mibox1{
+    width: 1226px;
+    height: 120px;
+    background:url("../img/xmad_15284242510723_zpPHh.jpg") no-repeat center;
+    background-size: 1226px 120px;
+    margin: 42px auto;
+}
+/*展示结束*/
 /*手机开始*/
 .type{
     width:100%;
@@ -1248,11 +1523,27 @@ li:hover{
     margin-left: 71px;
 }
 /*手机结束*/
+/*TV展示开始*/
+.TvBox{
+    width: 100%;
+    height: 204px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.TeHui{
+    width: 1226px;
+    height: 120px;
+    margin: 40px auto;
+    background: url("../img/xmad_15350103321586_gHozZ.jpg") no-repeat center;
+    background-size: 1226px 120px;
+}
+/*TV展示结束*/
 /*为你推荐开始*/
 .presenter{
      width:100%;
      height: 360px;
      background: #f5f5f5;
+    overflow: hidden;
 }
 .recommend{
     width: 1226px;
@@ -1270,9 +1561,15 @@ li:hover{
     margin-right: 0;
 }
 .product{
-    width: 1226px;
+    width: 3720px;
     height: 300px;
-    background: #f5f5f5;
+    background:#f5f5f5;
+    transition: all 1s;
+}
+.neikuan{
+    width: 1226px;
+    height: 100%;
+    overflow: hidden;
     margin: 0 auto;
 }
 .model{
@@ -1282,6 +1579,9 @@ li:hover{
     float: left;
     margin-right: 14px;
     transition: all 1s;
+}
+.model:nth-child(5){
+    margin-right: 14px;
 }
 .model:hover{
     transform: translateY(-5px);
@@ -1293,10 +1593,15 @@ li:hover{
 }
 .hongmi{
     width: 234px;
-    height: 205px;
+    height: 140px;
     background: #ffffff;
     float: left;
     text-align: center;
+    padding-top: 40px;
+}
+.hongmi>img{
+    width: 140px;
+    height: 140px;
 }
 .message{
     width: 234px;
@@ -1305,6 +1610,7 @@ li:hover{
     font-size: 12px;
     text-align: center;
     float: left;
+    margin-top: 15px;
 }
 .money{
     width: 234px;
