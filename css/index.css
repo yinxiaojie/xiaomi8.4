@@ -1215,16 +1215,14 @@ li:hover{
 .brick-m{
     width: 234px;
     height: 300px;
-    background: #f08fcc;
+    /*background: #f08fcc;*/
     transition: all 2s;
+    margin-bottom: 14px;
 }
 .brick-m:hover{
     transform: translateY(-5px);
     box-shadow: 0 5px 8px 5px rgba(0,0,0,0.1);
     cursor: pointer;
-}
-.brick-n{
-    margin-top: 14px;
 }
 .content{
     width: 992px;
@@ -1307,7 +1305,7 @@ li:hover{
 .exposure{
     width: 234px;
     height: 170px;
-    background: #b0a395;
+    /*background: #b0a395;*/
     margin-top: 20px;
 }
 .exposure_n{
@@ -2034,7 +2032,7 @@ li:hover{
 .from{
     width: 296px;
     height: 180px;
-    background: #f08fcc;
+    /*background: #f08fcc;*/
 }
 .bottoa{
     width: 34px;
