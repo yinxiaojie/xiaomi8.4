@@ -9,7 +9,7 @@ window.onload=function () {
         shopBox.style.height = "0";
         shopBox.style.boxShadow = "none";
     };
-
+    //侧导航
     let btn = document.querySelector(".botton");
     let btnLi = btn.querySelectorAll(".botton li");
     let asideBox = document.querySelectorAll(".asideBox");
@@ -22,22 +22,24 @@ window.onload=function () {
             asideBox[i].style.display = "none";
         }
     }
-
-    // 家电选项卡
-    // let house=document.getElementsByClassName("house")[0];
-    // let topRight=house.getElementsByClassName("top-right")[0];
-    // let lists=topRight.getElementsByTagName("li");
-    // let jiadianBox=document.getElementsByClassName("jiadianBox");
-    // // console.log(jiadianBox, lists,);
-    // for(let i=0;i<lists.length;i++){
-    //     lists[i].onmouseenter=function () {
-    //         for(let j=0;j<lists.length;j++){
-    //             jiadianBox[j].style.zIndex="5";
-    //         }
-    //         jiadianBox[i].style.zIndex="10";
-    //
-    //     };
-    // };
+    //搜索框
+    let input=document.querySelector("input");
+    let pull=document.querySelector(".pull");
+    let navs=document.querySelector(".nav");
+    let search=document.querySelector(".search");
+    let searchRight=document.querySelector(".search-right");
+    console.log(navs);
+    input.onclick=function () {
+        pull.style.display="block";
+        search.style="border:1px solid #ff6700";
+        searchRight.style="border-left:1px solid #ff6700";
+    };
+    navs.onclick=function () {
+        pull.style.display="none";
+        search.style="border:1px solid #b0b0ac";
+        searchRight.style="border-left:1px solid #b0b0ac";
+    };
+    
     //家电选项卡
     let topRight = document.querySelectorAll(".top-right");
     let lists = document.querySelectorAll(".top-right li");
